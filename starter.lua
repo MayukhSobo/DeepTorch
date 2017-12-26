@@ -76,3 +76,34 @@ who()
 -- [c]                      = 22.588235294118
 -- [number2]                = 34.134
 -- =
+
+-- Loops
+
+-- while() loops
+print('-------------------------------------------------------')
+
+i = 0
+while i < 10 do
+    print(i)
+    i = i + 1
+end
+print('-------------------------------------------------------')
+-- for loops
+
+for i = 0, 10 do
+    io.write(i, '\n') -- we can also use ```io.write()``` instead of print
+    -- io.write() doesn't put newline automatically
+    -- hence we provide '\n' manually
+    -- all the arguments in io.write() should be separated by comma(,)
+end
+
+-- reverse for loop
+for i = 10, 0, -1 do
+    io.write(i, ' ')
+end
+print('\n-------------------------------------------------------')
+i = 1
+repeat
+   print("value of i:", i)
+   i = i + 1
+until i > 15
