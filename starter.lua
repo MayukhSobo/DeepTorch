@@ -107,3 +107,12 @@ repeat
    print("value of i:", i)
    i = i + 1
 until i > 15
+print('-------------------------------------------------------')
+
+-- tables (instead of list, dictionary, array, tuples)
+a = {'a', 'b', 'c', 'd', 'e'}
+for key, value in ipairs(a) do
+    print(key, value)
+    -- by default key is the index unless we put something manually
+end
+
