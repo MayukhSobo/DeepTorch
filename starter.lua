@@ -59,7 +59,7 @@ print(longString)
 -- we have a function called ```who()``` which prints all the
 -- active variable in program memory while is is called
 
----  who()
+who()
 
 -- who() doesn't work in a lua script but it works on
 -- torch's interactive REPL
