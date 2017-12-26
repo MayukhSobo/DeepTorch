@@ -46,3 +46,11 @@ a long long
 srting ]]
 
 print('\n' .. longString)
+
+-- By default any undefined variable would have nil value
+
+print(k) -- prints nil because k is undefined
+
+-- We can assign value of a variable to nil to delete it from memory
+longString = nil
+print(longString)
