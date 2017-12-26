@@ -63,3 +63,16 @@ who()
 
 -- who() doesn't work in a lua script but it works on
 -- torch's interactive REPL
+
+-- This prints
+
+-- == User Variables ==
+-- [a]                      = 64
+-- [b]                      = 768
+-- [s2]                     = string : "Hello World Again!!"
+-- [s1]                     = string : "Hello World!!"
+-- [d]                      = 10.588235294118
+-- [number1]                = 42
+-- [c]                      = 22.588235294118
+-- [number2]                = 34.134
+-- =
