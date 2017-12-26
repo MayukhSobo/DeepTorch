@@ -54,3 +54,12 @@ print(k) -- prints nil because k is undefined
 -- We can assign value of a variable to nil to delete it from memory
 longString = nil
 print(longString)
+
+-- To see and verify if ```longString``` is deleted or not
+-- we have a function called ```who()``` which prints all the
+-- active variable in program memory while is is called
+
+---  who()
+
+-- who() doesn't work in a lua script but it works on
+-- torch's interactive REPL
