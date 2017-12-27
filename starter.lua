@@ -144,3 +144,42 @@ io.write('The length of the table is: ' .. #t1 .. '\n')
 t1[#t1 + 1] = 'new value'
 print(t1)
 
+-- Functions in Lua
+
+function f(x)
+   if x then
+       print('True!', x)
+   else
+       print('False!', x)
+   end
+end
+
+f(true)
+f(false)
+f(nil)
+f(123)
+f('hello')
+f({1, 2, 3, 4})
+
+-- Inline if statements
+function inif(x)
+    print(x > 0 and '+' or '-')
+end
+
+inif(12)
+inif(-10)
+inif(0)
+
+-- Functions are first class citizens
+-- and hence we can return a function
+-- from antother function
+
+function adder(x)
+    return function (y) return x + y end
+end
+
+five_adder = adder(5)
+print('5 + 7 = ' .. five_adder(7))
+
+ten_adder = adder(10)
+print('10 + 8 = ' .. ten_adder(8))
