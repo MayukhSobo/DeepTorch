@@ -116,3 +116,31 @@ for key, value in ipairs(a) do
     -- by default key is the index unless we put something manually
 end
 
+-- We can also create tables with keys and values like python dict
+-- But tables with only values are ordered while table with both key
+-- and values are unordered
+
+a = { a=10, b=20, c=30, d=40 }
+for key, values in ipairs(a) do
+    print(key, values) -- If you see the order, it's just coincidental
+end
+
+-- Defining a table in the form of array/list
+t1 = {'a', 2, true, 6, 'hello' }
+print(t1)
+
+-- Index access of table elements
+print(t1[1]) -- in Lua, indexing starts from 1
+
+-- Appending elements to the table
+ret = table.insert(t1, 'Mayukh') -- Inplace operation, returns nil
+print(ret == nil)
+print(t1)
+
+-- To check length of a table
+io.write('The length of the table is: ' .. #t1 .. '\n')
+
+-- We can also do this
+t1[#t1 + 1] = 'new value'
+print(t1)
+
